@@ -1,0 +1,21 @@
+.header {
+    height: 193px;
+    background: #42A8C0;
+    margin-top: 0;
+    margin-left: 240px;
+    text-align: center;
+}
+
+.blog-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.post-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+}
