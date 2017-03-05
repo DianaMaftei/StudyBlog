@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h5><span class="glyphicon glyphicon-time"></span> Posted by {{ page.author }}, {{ page.date | date_to_long_string }}.
-</h5>
-</body>
-</html>
+---
+layout: default
+---
+<h5><span class="fa fa-clock-o"></span> {{ page.date | date_to_long_string }}</h5>
+{{content}}

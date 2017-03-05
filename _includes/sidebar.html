@@ -3,18 +3,38 @@
         <img class="profile-img" src="{{site.baseurl}}/resources/img/profile.jpg" alt="profile picture" />
         <h1 class="name">Diana Maftei</h1>
         <h3 class="job-title">Java Developer</h3>
-        <span><a class="profile-links" href=""><i class="fa fa-github" aria-hidden="true"></i></a></span>
+        <span><a class="profile-links" href="https://github.com/DianaMaftei"><i class="fa fa-github" aria-hidden="true"></i></a></span>
         &nbsp&nbsp&nbsp
-        <span><a class="profile-links" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+        <span><a class="profile-links" href="https://www.linkedin.com/in/dianamaftei/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
     </div>
 
-    <div class="contact-container container-block">
-        <ul class="list-unstyled contact-list">
+    {% assign year = '0' %}
+    <ul class="nav-container">
+        {% for post in site.posts %}
+        {% capture tmp %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% if year != tmp %}
+          {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+          <h5 class="links-date">{{ post.date | date: "%Y" }}</h5>
+        {% endif %}
 
-            <!--for loop over years-->
-            <!--for loop over blog posts-->
-        </ul>
-    </div>
+        <div {% if page.url == post.url %} class="ribbon" {% endif %}>
+            <i class="stiches"></i>
+            <span>
+                <a class="posts-links" href="{{site.baseurl}}{{ post.url }}">
+            {% if post.category == "book" %}
+            <i class="fa fa-book" aria-hidden="true"></i>
+            {% elsif post.category == "video" %}
+            <i class="fa fa-film" aria-hidden="true"></i>
+            {% endif %}
+                    &nbsp
+           {{post.title}}</a>
+            </span>
+
+        </div>
+        <br>
+        {% endfor %}
+    </ul>
+
 
 </nav>
 

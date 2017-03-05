@@ -1,2 +1,2 @@
-# StudyBlog
-A blog for my study notes
+# study-notes
+A place to store my study notes for easy reference.

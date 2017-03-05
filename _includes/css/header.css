@@ -13,6 +13,11 @@
     padding-top: 30px;
 }
 
+.blog-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .post-title {
     color: #ffffff;
     font-size: 30px;
