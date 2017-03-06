@@ -54,7 +54,7 @@
     color: #fff;
     text-decoration: none;
     text-indent: -14px;
-    margin-left: 0.5in;
+    margin-left: 0.4in;
 }
 
 .links-date {
@@ -66,11 +66,11 @@
 
 .ribbon{
     background: #CC103A;
-    width: 85%;
-    min-height: 4em;
+    width: 83%;
+    min-height: 4.8em;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    padding-top:10px;
+    padding: 5px 0 5px 0;
 }
 
 .ribbon .stiches {
@@ -78,7 +78,7 @@
     position: absolute;
     top: 5px;
     bottom: 5px;
-    width: 110%;
+    width: 115%;
     border-top: 1px dashed rgba(0, 0, 0, 0.4);
     border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
 
@@ -87,26 +87,27 @@
 .ribbon span {
     position: absolute;
     width: 100%;
+    top: 25%;
 }
 
 .ribbon:before{
     content: "";
     position: absolute;
-    right: -2.4em;
+    right: -2.8em;
     top: 0;
-    border-top: 2.5em solid #CC103A;
-    border-right: 2.5em solid transparent;
+    border-top: 2.8em solid #CC103A;
+    border-right: 2.8em solid transparent;
 }
 
 .ribbon:after{
     content: "";
     position: absolute;
-    right: -2.4em;
+    right: -2.8em;
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 2.5em solid #CC103A;
-    border-right: 2.5em solid transparent;
+    border-bottom: 2.8em solid #CC103A;
+    border-right: 2.8em solid transparent;
 }
 
 

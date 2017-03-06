@@ -1,0 +1,14 @@
+.sources-links {
+    display: inline-block;
+    color: #42A8C0;
+    text-decoration: none;
+}
+
+#markdown-toc li{
+    list-style: none;
+}
+
+#markdown-toc li a{
+    color: #42A8C0;
+    text-decoration: none;
+}

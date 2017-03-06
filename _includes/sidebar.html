@@ -21,13 +21,13 @@
             <i class="stiches"></i>
             <span>
                 <a class="posts-links" href="{{site.baseurl}}{{ post.url }}">
-            {% if post.category == "book" %}
-            <i class="fa fa-book" aria-hidden="true"></i>
-            {% elsif post.category == "video" %}
-            <i class="fa fa-film" aria-hidden="true"></i>
-            {% endif %}
-                    &nbsp
-           {{post.title}}</a>
+            {% case post.category %}
+                    {% when "checklist" %}<i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    {% when "book" %} <i class="fa fa-book" aria-hidden="true"></i>
+                    {% when "video" %} <i class="fa fa-film" aria-hidden="true"></i>
+            {% endcase %}
+            &nbsp
+            {{post.title}}</a>
             </span>
 
         </div>

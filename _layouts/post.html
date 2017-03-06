@@ -1,5 +1,13 @@
 ---
 layout: default
 ---
-<h5><span class="fa fa-clock-o"></span> {{ page.date | date_to_long_string }}</h5>
+
+
+<span><strong>Sources:</strong></span>
+    <span>
+    {% for source in page.sources %}
+            <a href="{{source.url}}" class="sources-links">{{source.name}}</a> {% if forloop.index < forloop.length %}&{% endif %}
+    {% endfor %}
+    </span>
+<span style="float: right" class="fa fa-clock-o"> {{ page.date | date_to_long_string }}</span>
 {{content}}
