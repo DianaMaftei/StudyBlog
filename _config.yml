@@ -1,3 +1,8 @@
 baseurl: /study-notes
 exclude: ['README.md']
 permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true

@@ -3,11 +3,8 @@ A place to store my study notes for easy reference.
 
 //TODOs
 
-- Fix sidebar height
 - Make the website responsive
 - Add more info in index page
-- Better syntax highlighting
-- Warning/Attention info boxes
 - SEO
 - Google Analytics
 - Ribbon should adjust size according to link length
