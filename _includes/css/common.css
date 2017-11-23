@@ -82,6 +82,7 @@ pre {
     width:50px;
     float:left;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .alert-icon .fa {
